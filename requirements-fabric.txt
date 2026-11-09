@@ -1,0 +1,4 @@
+# Preinstalled in many Microsoft Fabric PySpark runtimes; verify your environment.
+pyspark>=3.4,<5
+pandas>=2.0
+matplotlib>=3.7
