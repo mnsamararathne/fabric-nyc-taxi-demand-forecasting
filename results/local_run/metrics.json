@@ -1,0 +1,87 @@
+{
+  "status": "calculated_from_local_data",
+  "forecast_horizon": "one hour ahead",
+  "train_rows": 80808,
+  "validation_rows": 31080,
+  "test_rows": 37296,
+  "validation_reference_weekly_MAE": 4.16586229086229,
+  "selected_by_validation_MAE": "random_forest",
+  "best_machine_learning_candidate": "random_forest",
+  "validation_models": [
+    {
+      "model": "random_forest",
+      "MAE": 3.9721588208189207,
+      "RMSE": 13.047359126213669,
+      "WAPE_percent": 19.059209617248204,
+      "bias": -0.46722844690974985
+    },
+    {
+      "model": "ridge",
+      "MAE": 4.106748862033571,
+      "RMSE": 12.981581348496608,
+      "WAPE_percent": 19.704999456883886,
+      "bias": -0.13955117982183005
+    },
+    {
+      "model": "previous_week",
+      "MAE": 4.16586229086229,
+      "RMSE": 14.037496898532842,
+      "WAPE_percent": 19.988637468872685,
+      "bias": -0.7335585585585586
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "MAE": 4.272112933925069,
+      "RMSE": 14.682994863269268,
+      "WAPE_percent": 20.498449228535257,
+      "bias": -1.1369511555659773
+    },
+    {
+      "model": "previous_hour",
+      "MAE": 6.25569498069498,
+      "RMSE": 20.441891936558758,
+      "WAPE_percent": 30.01607118872763,
+      "bias": -0.22351994851994852
+    },
+    {
+      "model": "previous_day",
+      "MAE": 6.411422136422137,
+      "RMSE": 24.448291373712625,
+      "WAPE_percent": 30.76328111612167,
+      "bias": -1.500096525096525
+    }
+  ],
+  "test_previously_inspected": true,
+  "data_provenance": "Official January 2025 TLC data downloaded separately",
+  "note": "Original test dates were inspected during guided project; retrospective, not untouched.",
+  "validation_metrics": {
+    "previous_week": {
+      "MAE": 4.16586229086229,
+      "RMSE": 14.037496898532842,
+      "WAPE_percent": 19.988637468872685,
+      "bias": -0.7335585585585586
+    },
+    "best_ml_candidate": {
+      "MAE": 3.972158820818921,
+      "RMSE": 13.047359126213669,
+      "WAPE_percent": 19.059209617248207,
+      "bias": -0.46722844690974996
+    },
+    "selected_model": "random_forest"
+  },
+  "test_retrospective_metrics": {
+    "previous_week": {
+      "MAE": 4.732437794937795,
+      "RMSE": 15.57136547576746,
+      "WAPE_percent": 25.39772759976286,
+      "bias": 0.6472812097812097
+    },
+    "best_ml_candidate": {
+      "MAE": 3.926424824269022,
+      "RMSE": 12.505350020840579,
+      "WAPE_percent": 21.072071614845637,
+      "bias": 0.1915331815530716
+    },
+    "selected_model": "random_forest"
+  }
+}

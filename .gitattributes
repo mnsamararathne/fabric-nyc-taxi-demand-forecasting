@@ -1,0 +1,2 @@
+results/local_run/*.duckdb filter=lfs diff=lfs merge=lfs -text
+results/local_run/*.joblib filter=lfs diff=lfs merge=lfs -text

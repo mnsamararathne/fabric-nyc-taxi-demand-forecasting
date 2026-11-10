@@ -1,0 +1,33 @@
+{
+  "provenance": "Values provided by the user from an earlier Microsoft Fabric session; NOT recalculated by ChatGPT in this package",
+  "period": "2025-01",
+  "bronze_rows": 3475226,
+  "silver_rows": 3475226,
+  "eligible_pickups": 3465683,
+  "ineligible_pickups": 9543,
+  "observed_zones": 259,
+  "hours": 744,
+  "gold_rows": 192696,
+  "observed_nonzero_zone_hours": 95754,
+  "zero_filled_zone_hours": 96942,
+  "model_ready_rows": 149184,
+  "training_rows": 80808,
+  "validation_rows": 31080,
+  "test_rows": 37296,
+  "hourly_total_peak": {"hour": 18, "pickups": 267303},
+  "hourly_total_trough": {"hour": 4, "pickups": 19957},
+  "weekday_avg_daily_pickups": 112566.52,
+  "weekend_avg_daily_pickups": 109581.63,
+  "top_zone": {"LocationID": 161,"name": "Midtown Center", "pickups": 169977},
+  "zones_over_50_percent_zero_hours": 145,
+  "validation_MAE": {"lag_1": 6.2557, "lag_24": 6.4114, "lag_168": 4.1659},
+  "previously_inspected_test_MAE": {"lag_1": 5.5845, "lag_24": 6.2047, "lag_168": 4.7324},
+  "baseline_validation_by_training_category": {
+    "High": {"zones": 32, "observations": 3840, "lag_1": 36.0674, "lag_24": 36.6799, "lag_168": 22.5667},
+    "Medium": {"zones": 20, "observations": 2400, "lag_1": 12.38, "lag_24": 12.5858, "lag_168": 8.1058},
+    "Low": {"zones": 62, "observations": 7440, "lag_1": 2.3499, "lag_24": 2.5641, "lag_168": 2.0657},
+    "Very Low": {"zones": 145, "observations": 17400, "lag_1": 0.5019, "lag_24": 0.5249, "lag_168": 0.4595}
+  },
+  "advanced_machine_learning_metrics": null,
+  "note": "January 26-31 test had already been examined during early development; it is not an untouched holdout."
+}
